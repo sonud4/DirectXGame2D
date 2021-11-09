@@ -36,5 +36,10 @@ int WINAPI WinMain(
 	wcex.lpfnWndProc = WndProc;
 	//ウィンドウのスタイル指定
 	wcex.style = CS_CLASSDC;
-	//
+	//構造体のサイズを設定
+	wcex.cbSize = sizeof(WNDCLASSEX);
+	//タスクバーに表示するアイコンを指定
+	wcex.hIcon = LoadIcon(NULL, IDI_APPLICATION);
+	//16*16サイズのアイコン
+	wcex.hIconSm = wcex.hIcon;
 }
