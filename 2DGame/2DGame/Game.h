@@ -1,0 +1,16 @@
+#ifndef _GAME_H_
+#define _GAME_H_
+
+#include <Windows.h>
+
+//***íËêî***
+#define SCREEN_WIDTH (960)		//âÊñ â°ïù
+#define SCREEN_HEIGHT (540)		//âÊñ ècïù
+
+HRESULT Init(HWND hWnd, UINT widht, UINT height);
+void Uninit();
+void Updata();
+void Draw();
+
+
+#endif	//_GAME_H_
